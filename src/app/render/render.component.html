@@ -1,0 +1,9 @@
+<canvas #canvas id="canvas" class="canvas"></canvas>
+<div class="actions-container">
+  <button (click)="loadBackground()">Load background</button>
+  <button (click)="exportImage()">Export</button>
+  <input [(ngModel)]="exportType" type="radio" id="contactChoice1" name="contact" value="PNG" />
+  <label for="contactChoice1">PNG</label>
+  <input [(ngModel)]="exportType" type="radio" id="contactChoice2" name="contact" value="JPG" />
+  <label for="contactChoice2">JPG</label>
+</div>
